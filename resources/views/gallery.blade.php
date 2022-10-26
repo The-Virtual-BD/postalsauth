@@ -1,8 +1,4 @@
-@extends('layouts.app')
-@section('title')
-    Gallery
-@endsection
-@section('content')
+<x-app-layout>
     <div class="bg-gradient-to-tr from-mblue to-dblue text-center py-9">
         <h1 class="font-poppins font-semibold text-4xl text-white">Gallery</h1>
     </div>
@@ -40,9 +36,7 @@
 
         </div>
         <div class="py-9 flex justify-center items-center">
-            <a href="#"
-                class="btn bg-gradient-to-tr from-mblue to-dblue text-center py-2 px-4 rounded-sm text-white hover:scale-110 hover:shadow-lg">Load
-                More</a>
+            <x-button>{{ __('Load More') }}</x-button>
         </div>
     </div>
 
@@ -72,8 +66,7 @@
 
         </div>
         <div class="py-9 flex justify-center items-center">
-            <a href="#"
-                class="btn bg-gradient-to-tr from-mblue to-dblue text-center py-2 px-4 rounded-sm text-white hover:scale-110 hover:shadow-lg">Load More</a>
+                <x-button>{{ __('Load More') }}</x-button>
         </div>
     </div>
 
@@ -91,10 +84,11 @@
         </div>
     </div>
 
-@endsection
-@section('script')
+
+
+<x-slot name="script">
     <script>
-        $(document).ready(function() {
+         $(document).ready(function() {
             $('#videos').addClass('hidden');
             $('#photobtn').addClass('border-b-2 border-blue');
             $('#photobtn').click(function() {
@@ -125,5 +119,7 @@
             $('#videoModal').toggleClass('hidden');
             $('#videoIframe').attr('src', vlink);
         };
-    </script>
-@endsection
+        </script>
+</x-slot>
+
+</x-app-layout>

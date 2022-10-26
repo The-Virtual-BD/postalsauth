@@ -101,7 +101,7 @@
                         <x-dropdown align="right" width="48">
                             <x-slot name="trigger">
                                 <span class="flex justify-center items-center"><img src="{{ asset('images/avatar.png') }}"
-                                        alt="" class="w-10 h-auto mr-2">Mehedi</span>
+                                        alt="" class="w-10 h-auto mr-2">{{Auth::user()->firstname}}</span>
                             </x-slot>
 
                             <x-slot name="content">

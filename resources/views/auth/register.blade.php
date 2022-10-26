@@ -11,9 +11,9 @@
             <h1 class="font-semibold text-white text-center text-4xl mb-7">SIGN UP</h1>
             <!-- First Name -->
             <div>
-                <x-input-label for="name" :value="__('First Name')" />
+                <x-input-label for="firstname" :value="__('First Name')" />
 
-                <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+                <x-text-input id="firstname" class="block mt-1 w-full" type="text" name="firstname" :value="old('firstname')" required autofocus />
 
                 <x-input-error :messages="$errors->get('name')" class="mt-2" />
             </div>

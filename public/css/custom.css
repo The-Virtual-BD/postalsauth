@@ -1,0 +1,8 @@
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #0582ca;
+}
+
+.btn {
+    transition: all 300ms;
+}

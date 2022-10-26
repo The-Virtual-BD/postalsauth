@@ -21,13 +21,13 @@ class HomeController extends Controller
     public function index()
     {
 
-        // $setting = DB::table('settings')
-        //     ->where('property', 'moode')
-        //     ->first();
+        $setting = DB::table('settings')
+            ->where('property', 'moode')
+            ->first();
 
-        // if ($setting->value == 2) {
-        //     return view('ud');
-        // }
+        if ($setting->value == 2) {
+            return view('ud');
+        }
 
         return view('index');
     }

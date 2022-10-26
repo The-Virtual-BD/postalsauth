@@ -5,10 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Gallery extends Model
+class Job extends Model
 {
     use HasFactory;
 
 
-    public $table = "galaries";
+
+    public $table = "vacancies";
 }

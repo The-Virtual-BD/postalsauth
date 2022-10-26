@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
+use App\Models\Profile;
 
 class RegisteredUserController extends Controller
 {
@@ -34,15 +35,34 @@ class RegisteredUserController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => ['required', 'string', 'max:255'],
+            'firstname' => ['required', 'string', 'max:255'],
+            'lastname' => ['required', 'string', 'max:255'],
+            'phone' => ['required', 'string', 'max:11'],
+            'nib' => ['required', 'string', 'max:20'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            // 'password' => ['required', 'confirmed'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
+        $suite = date('mds');
+        if (User::count() > 0) {
+            $lastuser = User::latest()->first('suite');
+            $suite = $lastuser->suite + 1;
+        }
+
         $user = User::create([
+            'firstname' => $request->firstname,
+            'lastname' => $request->lastname,
+            'phone' => $request->phone,
             'name' => $request->name,
+            'nib' => $request->nib,
+            'suite' => $suite,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+        ]);
+
+        $profile = Profile::create([
+            'user_id' => $user->id
         ]);
 
         event(new Registered($user));

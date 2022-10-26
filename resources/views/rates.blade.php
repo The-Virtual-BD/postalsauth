@@ -1,8 +1,4 @@
-@extends('layouts.app')
-@section('title')
-Rates
-@endsection
-@section('content')
+<x-app-layout>
 <div class="bg-gradient-to-tr from-mblue to-dblue text-center py-9">
     <h1 class="font-poppins font-semibold text-4xl text-white">Rates</h1>
 </div>
@@ -306,8 +302,4 @@ Rates
 
 </div>
 
-
-@endsection
-@section('script')
-
-@endsection
+</x-app-layout>
