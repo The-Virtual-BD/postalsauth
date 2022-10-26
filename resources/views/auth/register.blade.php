@@ -6,7 +6,7 @@
             </a>
         </x-slot>
 
-        <form method="POST" action="{{ route('register') }}">
+        <form method="POST" action="{{ route('register') }}" class="w-3/5">
             @csrf
             <h1 class="font-semibold text-white text-center text-4xl mb-7">SIGN UP</h1>
             <!-- First Name -->
