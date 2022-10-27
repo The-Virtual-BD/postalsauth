@@ -4,16 +4,7 @@ use App\Http\Controllers\GalleryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\JobController;
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\Http\Controllers\ProfileController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -43,7 +34,10 @@ Route::get('/pickup', [HomeController::class, 'pickup'])->name('pickup');
 Route::get('/incomming', [HomeController::class, 'incomming'])->name('incomming');
 
 // Profile
-Route::get('/profile', [HomeController::class, 'profile'])->name('profile');
+Route::controller(ProfileController::class)->prefix('profiles')->group(function () {
+    Route::get('/','index')->name('myprofile');
+    Route::get('/edit','edit')->name('editprofile');
+});
 
 
 Route::get('/galaries', [GalleryController::class, 'index'])->name('galaries');

@@ -15,12 +15,12 @@
         </div>
     </div>
     <div class="container mx-auto bg-white rounded-md p-4 mt-6 shadow">
-        <div class="grid grid-cols-6 mb-4">
-            <h3 class="font-poppins font-medium text-xl">Personal Information</h3>
-                <a href="#" class="  text-sm text-white inline-block" ><div class="bg-blue rounded-md w-6 h-6 flex justify-center items-center"><span class="iconify" data-icon="clarity:pencil-solid"></span></div></a>
+        <div class="grid grid-cols-2 sm:grid-cols-6 mb-4">
+            <h3 class="font-poppins font-medium text-xl col-span-1">Personal Information</h3>
+            <a href="{{route('editprofile')}}" class=" text-sm text-white inline-block col-span-1 sm:col-span-5" ><div class="bg-blue rounded-md w-6 h-6 flex justify-center items-center"><span class="iconify" data-icon="clarity:pencil-solid"></span></div></a>
         </div>
 
-        <div class=" grid grid-cols-6">
+        <div class=" grid grid-cols-2 sm:grid-cols-6">
             <div class="col-span-1">
                 <p>Name :</p>
                 <p>Email :</p>
@@ -32,7 +32,7 @@
                 <p>Island of Birth :</p>
                 <p>Country of Citizenship :</p>
             </div>
-            <div class="col-span-5">
+            <div class="col-span-1 sm:col-span-5">
 
                 <p>{{Auth::user()->firstname.' '.Auth::user()->lastname}}</p>
                 <p>{{Auth::user()->email}}</p>
