@@ -229,6 +229,7 @@
                                 <x-nav-link :href="route('rates')" :active="request()->routeIs('rates')">
                                     {{ __('Rates') }}
                                 </x-nav-link>
+                                <hr class="text-blue">
                                 <x-nav-link :href="route('packages')" :active="request()->routeIs('packages')">
                                     {{ __('Manage Packages') }}
                                 </x-nav-link>
@@ -255,6 +256,47 @@
                 <a href="{{ route('register') }}"
                     class="px-2 py-1 bg-gradient-to-tr rounded from-mblue to-dblue text-white hover:scale-105 focus:outline-none transition duration-150 ease-in-out">Sign
                     Up</a>
+                <ul>
+                    <li>
+                        <x-dropdown align="right" width="48">
+                            <x-slot name="trigger">
+                                <button class="">
+                                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                        <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                        <path :class="{'hidden': ! open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </x-slot>
+
+                            <x-slot name="content">
+                                <x-nav-link :href="route('service')" :active="request()->routeIs('service')">
+                                    {{ __('Our Services') }}
+                                </x-nav-link>
+                                <x-nav-link :href="route('jobs.index')" :active="request()->routeIs('jobs.index')">
+                                    {{ __('Jobs') }}
+                                </x-nav-link>
+                                <x-nav-link :href="route('jobs.index')" :active="request()->routeIs('jobs.index')">
+                                    {{ __('Training') }}
+                                </x-nav-link>
+                                <x-nav-link :href="route('about')" :active="request()->routeIs('about')">
+                                    {{ __('About US') }}
+                                </x-nav-link>
+                                <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')">
+                                    {{ __('Contact') }}
+                                </x-nav-link>
+                                <x-nav-link :href="route('galaries')" :active="request()->routeIs('galaries')">
+                                    {{ __('Photo Gallery') }}
+                                </x-nav-link>
+                                <x-nav-link :href="route('faq')" :active="request()->routeIs('faq')">
+                                    {{ __('FAQ') }}
+                                </x-nav-link>
+                                <x-nav-link :href="route('rates')" :active="request()->routeIs('rates')">
+                                    {{ __('Rates') }}
+                                </x-nav-link>
+                            </x-slot>
+                        </x-dropdown>
+                    </li>
+                </ul>
             </div>
         @endguest
     </div>
