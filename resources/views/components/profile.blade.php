@@ -4,7 +4,7 @@
     </div>
     <div class="font-inter">
         <h3 class="font-poppins font-medium text-xl">{{Auth::user()->firstname.' '.Auth::user()->lastname}}</h3>
-        <p>Phone: {{Auth::user()->phone}}</p>
+        <p>NIB: {{Auth::user()->nib}}</p>
         <p>Email: {{Auth::user()->email}}</p>
         <p class="text-blue font-bold">Suite: #{{Auth::user()->suite}}</p>
     </div>

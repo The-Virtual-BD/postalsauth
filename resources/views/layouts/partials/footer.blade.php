@@ -30,6 +30,7 @@
                     <li class="font-inter font-medium text-base leading-8 text-white"><a href="{{route('faq')}}">FAQ</a></li>
                     <li class="font-inter font-medium text-base leading-8 text-white"><a href="{{route('about')}}">About Us</a></li>
                     <li class="font-inter font-medium text-base leading-8 text-white"><a href="{{route('rates')}}">Rates</a></li>
+                    <li class="font-inter font-medium text-base leading-8 text-white"><a href="{{route('track')}}">Track Package</a></li>
                 </ul>
             </div>
         </div>

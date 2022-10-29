@@ -32,6 +32,10 @@ Route::get('/jobsshow', [HomeController::class, 'jobsshow'])->name('jobsshow');
 Route::get('/packages', [HomeController::class, 'packages'])->name('packages');
 Route::get('/pickup', [HomeController::class, 'pickup'])->name('pickup');
 Route::get('/incomming', [HomeController::class, 'incomming'])->name('incomming');
+Route::get('/track',  function ()
+{
+    return view('boffice.track');
+})->name('track');
 
 // Profile
 Route::controller(ProfileController::class)->prefix('profiles')->group(function () {

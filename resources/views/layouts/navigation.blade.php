@@ -193,7 +193,7 @@
                             </x-slot>
                         </x-dropdown>
                     </li>
-                    <li>
+                    <li class="">
                         <x-dropdown align="right" width="48">
                             <x-slot name="trigger">
                                 <button class="">
@@ -257,7 +257,7 @@
                     class="px-2 py-1 bg-gradient-to-tr rounded from-mblue to-dblue text-white hover:scale-105 focus:outline-none transition duration-150 ease-in-out">Sign
                     Up</a>
                 <ul>
-                    <li>
+                    <li class="sm:hidden">
                         <x-dropdown align="right" width="48">
                             <x-slot name="trigger">
                                 <button class="">

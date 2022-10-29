@@ -144,9 +144,7 @@
                             <td>50</td>
                             <td>NAS</td>
                             <td>98766</td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -162,9 +160,7 @@
                             <td>50</td>
                             <td>NAS</td>
                             <td>98766</td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -180,9 +176,7 @@
                             <td>50</td>
                             <td>NAS</td>
                             <td>98766</td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -198,9 +192,7 @@
                             <td>50</td>
                             <td>NAS</td>
                             <td>98766</td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -216,9 +208,7 @@
                             <td>50</td>
                             <td>NAS</td>
                             <td>98766</td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -234,9 +224,7 @@
                             <td>50</td>
                             <td>NAS</td>
                             <td>98766</td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -252,9 +240,7 @@
                             <td>50</td>
                             <td>NAS</td>
                             <td>98766</td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -270,9 +256,7 @@
                             <td>50</td>
                             <td>NAS</td>
                             <td>98766</td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -288,9 +272,7 @@
                             <td>50</td>
                             <td>NAS</td>
                             <td>98766</td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -306,9 +288,7 @@
                             <td>50</td>
                             <td>NAS</td>
                             <td>98766</td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
 
                     </tbody>
@@ -342,9 +322,7 @@
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -358,9 +336,7 @@
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -374,9 +350,7 @@
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -390,9 +364,7 @@
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -406,9 +378,7 @@
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -422,9 +392,7 @@
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                     </tbody>
 
@@ -450,9 +418,7 @@
                                         class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -462,9 +428,7 @@
                                         class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -474,9 +438,7 @@
                                         class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -486,9 +448,7 @@
                                         class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -498,9 +458,7 @@
                                         class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -510,9 +468,7 @@
                                         class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                     </tbody>
 
@@ -540,9 +496,7 @@
                                         class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -553,9 +507,7 @@
                                         class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -566,9 +518,7 @@
                                         class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -579,9 +529,7 @@
                                         class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -592,9 +540,7 @@
                                         class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -605,9 +551,7 @@
                                         class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button
-                                    class="flex justify-center items-center text-blue font-semibold ">Track</button>
-                            </td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                     </tbody>
 

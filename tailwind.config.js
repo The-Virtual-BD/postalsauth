@@ -28,6 +28,7 @@ module.exports = {
             'lblue': '#E9F7FF',
             'white': '#FFFFFF',
             'gray': '#CBD5E1',
+            'lgray': '#F1F5F9',
             'red': '#EF4444',
           },
     },
