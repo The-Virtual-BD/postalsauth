@@ -7,11 +7,11 @@
     {{-- Minister --}}
     <div class="container mx-auto minister grid grid-cols-1 sm:grid-cols-4 py-20 sm:gap-14">
         <div class="flex justify-center items-center">
-            <img src="{{ asset('images/team/JENNIFER-JOHNSON.jpg') }}" class="border-blue rounded-full border-4 w-72"
+            <img src="{{ asset('images/team/JENNIFER-JOHNSON.jpg') }}" class="border-blue rounded-full border-4 w-48 sm:w-72"
                 alt="Mabelene Miller">
         </div>
         <div class="col-span-3 flex flex-col justify-center p-8 sm:p-0 text-center sm:text-left">
-            <p class="font-inter text-xl font-light">Welcome to a new and improved postal experience. We at the Bahamas Post
+            <p class="font-inter text-base sm:text-xl font-light">Welcome to a new and improved postal experience. We at the Bahamas Post
                 Office are cognizant of the demand of our customers for a postal product that is efficient, timely, and
                 flexible enough to adapt to an ever-evolving postal market. We heard you and made the bold steps to upgrade,
                 transform, and expand our services, using the latest technological applications to bring to you, the
