@@ -1,12 +1,12 @@
 {{-- Header --}}
 <header class=" shadow-md">
     <div class="container mx-auto flex">
-        <div class="w-1/4 flex justify-start items-center">
+        <div class="w-1/4 sm:w-1/6 flex justify-start items-center">
             <a href="{{ route('index') }}">
                 <x-application-logo class="w-15" />
             </a>
         </div>
-        <div class="hidden sm:flex flex-1 w-1/2">
+        <div class="hidden sm:flex flex-grow">
             <ul class="flex justify-between items-center nav-main" id="nav-main">
                 <li>
                     <x-nav-url :href="route('index')" :active="request()->routeIs('index')">
@@ -18,7 +18,7 @@
                         {{ __('Our Services') }}
                     </x-nav-url>
                 </li>
-                <li class="py-5 mx-2 cursor-pointer hover:text-blue font-semibold font-inter text-base">
+                <li class="py-5  cursor-pointer hover:text-blue font-semibold font-inter text-base">
                     <x-dropdown align="right" width="48">
                         <x-slot name="trigger">
                             <span class="flex justify-between items-center">
@@ -47,7 +47,7 @@
                         {{ __('Contact') }}
                     </x-nav-url>
                 </li>
-                <li class="py-5 mx-2 cursor-pointer hover:text-blue font-semibold font-inter text-base">
+                <li class="py-5  cursor-pointer hover:text-blue font-semibold font-inter text-base">
                     <x-dropdown align="right" width="48">
                         <x-slot name="trigger">
                             <span class="flex justify-between items-center">
@@ -72,7 +72,7 @@
 
             </ul>
         </div>
-        <div class="flex-1 w-3/4 flex justify-end items-center">
+        <div class="w-3/4 sm:w-1/6 flex justify-end items-center">
             @auth
             <div class="">
                 <div class="hidden md:flex justify-end items-center">
@@ -308,5 +308,4 @@
             @endguest
         </div>
     </div>
-
 </header>
