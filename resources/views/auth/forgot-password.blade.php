@@ -22,7 +22,7 @@
 
             <div class="flex items-center justify-end mt-4">
                 <x-secondary-button>
-                    {{ __('Email Password Reset Link') }}
+                    {{ __('Email Reset Link') }}
                 </x-secondary-button>
             </div>
         </form>
