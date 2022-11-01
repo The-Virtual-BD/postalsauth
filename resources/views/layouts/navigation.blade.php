@@ -6,7 +6,7 @@
                 <x-application-logo class="w-15" />
             </a>
         </div>
-        <div class="hidden sm:flex flex-grow">
+        <div class="hidden sm:flex sm:justify-center flex-grow">
             <ul class="flex justify-between items-center nav-main" id="nav-main">
                 <li>
                     <x-nav-url :href="route('index')" :active="request()->routeIs('index')">
@@ -77,7 +77,7 @@
             <div class="">
                 <div class="hidden md:flex justify-end items-center">
                     <ul class="nav-main flex items-center gap-4">
-                        <li class="py-2 cursor-pointer hover:text-blue font-inter text-base relative">
+                        <li class="py-2 mx-1cursor-pointer hover:text-blue font-inter text-base relative">
                             <x-dropdown align="top" width="48">
                                 <x-slot name="trigger">
                                     <div
@@ -96,7 +96,7 @@
                                 </x-slot>
                             </x-dropdown>
                         </li>
-                        <li class="py-2 hover:text-blue">
+                        <li class="py-2 mx-1 hover:text-blue">
                             <x-dropdown align="right" width="48">
                                 <x-slot name="trigger">
                                     <span class="flex justify-center items-center"><img
@@ -120,7 +120,7 @@
                                 </x-slot>
                             </x-dropdown>
                         </li>
-                        <li>
+                        <li class=" mx-1">
                             <x-dropdown align="right" width="48">
                                 <x-slot name="trigger">
                                     <button

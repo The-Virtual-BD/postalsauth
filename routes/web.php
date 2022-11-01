@@ -32,15 +32,15 @@ Route::get('/jobsshow', [HomeController::class, 'jobsshow'])->name('jobsshow');
 Route::get('/packages', [HomeController::class, 'packages'])->name('packages');
 Route::get('/pickup', [HomeController::class, 'pickup'])->name('pickup');
 Route::get('/incomming', [HomeController::class, 'incomming'])->name('incomming');
-Route::get('/track',  function ()
-{
+Route::get('/track',  function () {
     return view('boffice.track');
 })->name('track');
 
 // Profile
 Route::controller(ProfileController::class)->prefix('profiles')->group(function () {
-    Route::get('/','index')->name('myprofile');
-    Route::get('/edit','edit')->name('editprofile');
+    Route::get('/', 'index')->name('myprofile');
+    Route::get('/edit', 'edit')->name('editprofile');
+    Route::post('/update/{user}', 'update')->name('updateprofile');
 });
 
 
@@ -49,5 +49,5 @@ Route::get('/galaries', [GalleryController::class, 'index'])->name('galaries');
 
 
 // Auth routs
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 // =========================

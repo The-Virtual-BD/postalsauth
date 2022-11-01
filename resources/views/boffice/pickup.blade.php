@@ -101,7 +101,7 @@
 
 <!-- Main modal -->
 <div id="pickupconfirm" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto bg-[rgba(0,0,0,.32)]  overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center">
-    <div class="absolute p-4 w-full max-w-2xl h-full md:h-auto left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
+    <div class="absolute p-4 w-full max-w-2xl h-full md:h-auto left-1/2 top-1/2 -translate-y-1/3 -translate-x-1/2">
         <!-- Modal content -->
         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
             <!-- Modal header -->
@@ -121,7 +121,7 @@
             <div class="flex items-center p-6 space-x-2 justify-center">
                 <button class="px-2 py-1 border border-blue rounded text-blue hover:bg-gradient-to-tr  hover:from-mblue hover:to-dblue hover:text-white hover:scale-105 focus:outline-none transition duration-150 ease-in-out closemodal" >Continue</button>
                 <a href="{{route('incomming')}}">
-                    <button class="px-2 py-1 bg-gradient-to-tr rounded from-mblue to-dblue text-white hover:scale-105 focus:outline-none transition duration-150 ease-in-out">Incomming Package</button>
+                    <button class="px-2 py-1 bg-gradient-to-tr rounded from-mblue to-dblue text-white hover:scale-105 focus:outline-none transition duration-150 ease-in-out">Incoming Package</button>
                 </a>
             </div>
         </div>

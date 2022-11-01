@@ -15,9 +15,8 @@
             </div>
         </div>
         <div class="container mx-auto bg-white rounded-md p-4 mt-6 shadow">
-            <form action="#" method="POST">
+            <form action="{{route('updateprofile',Auth::user()->id)}}" method="POST">
                 @csrf
-                @method('PATCH')
                 <div class="">
                     <div class="grid grid-cols-6 gap-4">
                         <div class="col-span-6"><h3 class="font-poppins font-medium text-xl mb-2 uppercase text-blue">TYPE OF ACCOUNT</h3></div>
@@ -36,14 +35,14 @@
                             <input type="text" name="companyname" id="companyname"
                                 value="{{ Auth::user()->profile->companyname ?? '' }}"
                                 class=" block w-full rounded-md bg-lblue focus:bg-white focus:ring-0 border-blue shadow-sm sm:text-sm"
-                                required>
+                                >
                         </div>
                         <div class="col-span-6 sm:col-span-3 companydetails hidden">
                             <label for="tin" class="block text-sm font-bold font-poppins">TIN number</label>
                             <input type="text" name="tin" id="tin"
                                 value="{{ Auth::user()->profile->tin ?? '' }}"
                                 class=" block w-full rounded-md bg-lblue focus:bg-white focus:ring-0 border-blue shadow-sm sm:text-sm"
-                                required>
+                                >
                         </div>
                         {{-- Company details end --}}
 
