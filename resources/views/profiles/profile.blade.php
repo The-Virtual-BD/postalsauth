@@ -12,9 +12,8 @@
                 <button type="button" class="py-2 px-5 text-sm font-medium bg-lblue hover:text-white hover:bg-blue">
                     Account Documents
                 </button>
-                {{-- <button type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-            Settings
-            </button> --}}
+                <button type="button" class="py-2 px-5 text-sm font-medium bg-lblue hover:text-white hover:bg-blue"><a
+                    href="{{ route('editprofile') }}">Profile Settings</a></button>
             </div>
         </div>
         <div class="container mx-auto bg-white rounded-md p-4 mt-6 shadow">
@@ -34,7 +33,7 @@
                     </div>
                     <div class="grid grid-cols-2 text-sm my-1">
                         <p class="font-bold">Type of account :</p>
-                        <p>Business</p>
+                        <p>{{ Auth::user()->profile->account_type == 1 ? "Personal" : "Business"}}</p>
                     </div>
                     <div class="grid grid-cols-2 text-sm my-1">
                         <p class="font-bold">Name :</p>
@@ -50,26 +49,26 @@
                     </div>
                     <div class="grid grid-cols-2 text-sm my-1">
                         <p class="font-bold ">Country :</p>
-                        <p>Bahamas</p>
+                        <p>{{Auth::user()->profile->country}}</p>
                     </div>
                     <div class="grid grid-cols-2 text-sm my-1">
                         <p class="font-bold ">Island :</p>
-                        <p>Nasau</p>
+                        <p>{{Auth::user()->profile->island}}</p>
                     </div>
                     <div class="grid grid-cols-2 text-sm my-1">
                         <p class="font-bold ">STREET/ HOUSE NO :</p>
-                        <p>112/2</p>
+                        <p>{{Auth::user()->profile->house}}</p>
                     </div>
                     <div class="grid grid-cols-2 text-sm my-1">
                         <p class="font-bold ">Address :</p>
-                        <p>121/B North Island, Nasau, Bahamas.</p>
+                        <p>{{Auth::user()->profile->address}}</p>
                     </div>
                     <div class="mt-4 mb-2">
                         <p class="text-base text-blue uppercase font-bold tracking-widest">Prefered Region</p>
                     </div>
                     <div class="grid grid-cols-2 text-sm my-1">
                         <p class="font-bold">Prefered Region :</p>
-                        <p>Bahamas</p>
+                        <p>{{Auth::user()->profile->region}}</p>
                     </div>
 
                     <div class="mt-4 mb-2">
@@ -77,11 +76,11 @@
                     </div>
                     <div class="grid grid-cols-2 text-sm my-1">
                         <p class="font-bold">Prefered location :</p>
-                        <p>Store: Golden Gates, Carmichael Rd.</p>
+                        <p>{{Auth::user()->profile->location}}</p>
                     </div>
 
                 </div>
-
+                @if (Auth::user()->profile->account_type == 2)
                 {{-- Business Informations --}}
                 <div class="col-span-2">
                     <div class="grid grid-cols-2 mb-4">
@@ -92,14 +91,17 @@
                     </div>
                     <div class="grid grid-cols-2 text-sm my-1">
                         <p class="font-bold">Company Name :</p>
-                        <p>The Virtual BD</p>
+                        <p>{{Auth::user()->profile->company_name}}</p>
                     </div>
                     <div class="grid grid-cols-2 text-sm my-1">
                         <p class="font-bold">TIN No :</p>
-                        <p>25658986465</p>
+                        <p>{{Auth::user()->profile->tin_number}}</p>
                     </div>
-
                 </div>
+                @endif
+
+
+
             </div>
         </div>
 

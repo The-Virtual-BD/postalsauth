@@ -72,12 +72,12 @@
 
             </ul>
         </div>
-        <div class="w-3/4 sm:w-1/6 flex justify-end items-center">
+        <div class="w-3/4 sm:w-1/5 flex justify-end items-center">
             @auth
             <div class="">
                 <div class="hidden md:flex justify-end items-center">
                     <ul class="nav-main flex items-center gap-4">
-                        <li class="py-2 mx-1cursor-pointer hover:text-blue font-inter text-base relative">
+                        <li class="py-2 mx-1 cursor-pointer hover:text-blue font-inter text-base relative">
                             <x-dropdown align="top" width="48">
                                 <x-slot name="trigger">
                                     <div

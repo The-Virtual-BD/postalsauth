@@ -11,13 +11,6 @@ class Profile extends Model
 
 
     public $table = "profiles";
-
-
-    protected $fillable = [
-        'user_id',
-        'first_name',
-        'last_name',
-        'phone',
-        'nib',
-    ];
+    
+    protected $fillable = ['user_id', 'first_name', 'last_name', 'account_type', 'company_name', 'tin_number', 'country', 'island', 'address', 'house', 'region', 'location', 'phone', 'nib',];
 }

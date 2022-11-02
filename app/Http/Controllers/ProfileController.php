@@ -75,26 +75,32 @@ class ProfileController extends Controller
      */
     public function update(Request $request, $id)
     {
+        // return $request;
         $user = User::findOrFail($id);
         $user->firstname = $request->firstname;
-        $user->profile->firstname = $request->firstname;
         $user->lastname = $request->lastname;
-        $user->profile->lastname = $request->lastname;
         $user->phone = $request->phone;
-        $user->profile->phone = $request->phone;
-        $user->profile->nib = $request->nib;
-        $user->profile->account_type = $request->type;
-        if ($request->type == 2) {
-            $user->profile->company_name = $request->companyname;
-            $user->profile->tin_number = $request->tin;
-        }
-        $user->profile->country = $request->country;
-        $user->profile->island = $request->island;
-        $user->profile->address = $request->about;
-        $user->profile->house = $request->house;
-        $user->profile->region = $request->region;
-        $user->profile->location = $request->location;
         $user->save();
+
+
+        $profile = Profile::where('user_id',$id)->first();
+
+        $profile->first_name = $request->firstname;
+        $profile->last_name = $request->lastname;
+        $profile->phone = $request->phone;
+        $profile->nib = $request->nib;
+        $profile->account_type = $request->type;
+        if ($request->type == 2) {
+            $profile->company_name = $request->companyname;
+            $profile->tin_number = $request->tin;
+        }
+        $profile->country = $request->country;
+        $profile->island = $request->island;
+        $profile->address = $request->about;
+        $profile->house = $request->house;
+        $profile->region = $request->region;
+        $profile->location = $request->location;
+        $profile->save();
 
         return redirect()->route('myprofile');
     }

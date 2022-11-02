@@ -1,31 +1,47 @@
 <x-app-layout>
     <div class="py-6">
         <div class="container mx-auto ">
-            <x-profile class="rounded-t bg-white p-4 flex justify-start items-center shadow"></x-profile>
+            <div class="rounded-t bg-white p-4 flex justify-start items-center shadow">
+                <div class="mx-6">
+                    <img src="{{ asset('images/avatarbig.png') }}" alt="" class="w-24 h-auto">
+                </div>
+                <div class="font-inter">
+                    <h3 class="font-poppins font-medium text-xl">{{ Auth::user()->firstname . ' ' . Auth::user()->lastname }}
+                    </h3>
+                    <p>NIB: {{ Auth::user()->nib }}</p>
+                    <p>Email: {{ Auth::user()->email }}</p>
+                    <p class="text-blue font-bold">Suite: #{{ Auth::user()->suite }}</p>
+                </div>
+            </div>
         </div>
 
         <div class="container mx-auto bg-white border-t border-lblue rounded-b-md shadow">
             <div class=" inline-flex" role="group">
-                <button type="button" class="py-2 px-5 text-sm font-medium text-white bg-blue rounded-bl-md">
-                    Profile
+                <button type="button" class="py-2 px-5 text-sm font-medium bg-lblue hover:text-white hover:bg-blue rounded-bl-md"><a
+                        href="{{ route('myprofile') }}">Profile</a></button>
+                <button type="button" class="py-2 px-5 text-sm font-medium bg-lblue hover:text-white hover:bg-blue">
+                    Account Documents
                 </button>
-                {{-- <button type="button" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-                Settings
-                </button> --}}
+                <button type="button" class="py-2 px-5 text-sm font-medium text-white bg-blue"><a
+                        href="{{ route('editprofile') }}">Profile Settings</a></button>
             </div>
         </div>
         <div class="container mx-auto bg-white rounded-md p-4 mt-6 shadow">
-            <form action="{{route('updateprofile',Auth::user()->id)}}" method="POST">
+            <form action="{{ route('updateprofile', Auth::user()->id) }}" method="POST">
                 @csrf
                 <div class="">
                     <div class="grid grid-cols-6 gap-4">
-                        <div class="col-span-6"><h3 class="font-poppins font-medium text-xl mb-2 uppercase text-blue">TYPE OF ACCOUNT</h3></div>
+                        <div class="col-span-6">
+                            <h3 class="font-poppins font-medium text-xl mb-2 uppercase text-blue">TYPE OF ACCOUNT</h3>
+                        </div>
                         <div class="col-span-6">
                             <label for="type" class="block text-sm font-bold font-poppins">TYPE OF ACCOUNT</label>
                             <select id="type" name="type"
                                 class=" block w-full rounded-md border border-blue bg-lblue focus:bg-white focus:ring-0 py-2 px-3 shadow-sm sm:text-sm">
-                                <option value="1">Personal</option>
-                                <option value="2">Business</option>
+                                <option value="1" {{ Auth::user()->profile->account_type == 1 ? 'selected' : '' }}>
+                                    Personal</option>
+                                <option value="2" {{ Auth::user()->profile->account_type == 2 ? 'selected' : '' }}>
+                                    Business</option>
                             </select>
                         </div>
                         {{-- Company details --}}
@@ -33,32 +49,28 @@
                             <label for="companyname" class="block text-sm font-bold font-poppins">Company
                                 name</label>
                             <input type="text" name="companyname" id="companyname"
-                                value="{{ Auth::user()->profile->companyname ?? '' }}"
-                                class=" block w-full rounded-md bg-lblue focus:bg-white focus:ring-0 border-blue shadow-sm sm:text-sm"
-                                >
+                                value="{{ Auth::user()->profile->company_name ?? '' }}"
+                                class=" block w-full rounded-md bg-lblue focus:bg-white focus:ring-0 border-blue shadow-sm sm:text-sm">
                         </div>
                         <div class="col-span-6 sm:col-span-3 companydetails hidden">
                             <label for="tin" class="block text-sm font-bold font-poppins">TIN number</label>
                             <input type="text" name="tin" id="tin"
-                                value="{{ Auth::user()->profile->tin ?? '' }}"
-                                class=" block w-full rounded-md bg-lblue focus:bg-white focus:ring-0 border-blue shadow-sm sm:text-sm"
-                                >
+                                value="{{ Auth::user()->profile->tin_number ?? '' }}"
+                                class=" block w-full rounded-md bg-lblue focus:bg-white focus:ring-0 border-blue shadow-sm sm:text-sm">
                         </div>
                         {{-- Company details end --}}
 
                         <div class="col-span-6 sm:col-span-3">
                             <label for="firstname" class="block text-sm font-bold font-poppins">First
                                 name</label>
-                            <input type="text" name="firstname" id="firstname"
-                                value="{{ Auth::user()->firstname }}"
+                            <input type="text" name="firstname" id="firstname" value="{{ Auth::user()->firstname }}"
                                 class=" block w-full rounded-md bg-lblue focus:bg-white focus:ring-0 border-blue shadow-sm sm:text-sm"
                                 required>
                         </div>
 
                         <div class="col-span-6 sm:col-span-3">
                             <label for="lastname" class="block text-sm font-bold font-poppins">Last name</label>
-                            <input type="text" name="lastname" id="lastname"
-                                value="{{ Auth::user()->lastname }}"
+                            <input type="text" name="lastname" id="lastname" value="{{ Auth::user()->lastname }}"
                                 class=" block w-full rounded-md bg-lblue focus:bg-white focus:ring-0 border-blue shadow-sm sm:text-sm"
                                 required>
                         </div>
@@ -87,7 +99,8 @@
 
                         <div class="col-span-6 sm:col-span-3">
                             <label for="island" class="block text-sm font-bold font-poppins">Island</label>
-                            <select id="island" name="island" class=" block w-full rounded-md border border-blue bg-lblue focus:bg-white focus:ring-0 py-2 px-3 shadow-sm sm:text-sm">
+                            <select id="island" name="island"
+                                class=" block w-full rounded-md border border-blue bg-lblue focus:bg-white focus:ring-0 py-2 px-3 shadow-sm sm:text-sm">
                                 <x-island></x-island>
                             </select>
                         </div>
@@ -108,7 +121,9 @@
                                 class="block w-full rounded-md border-blue bg-lblue focus:bg-white focus:ring-0 sm:text-sm"
                                 required>
                         </div>
-                        <div class="col-span-6"><h3 class="font-poppins font-medium text-xl mt-4 uppercase text-blue">Prefered Region</h3></div>
+                        <div class="col-span-6">
+                            <h3 class="font-poppins font-medium text-xl mt-4 uppercase text-blue">Prefered Region</h3>
+                        </div>
 
                         <div class="col-span-6">
                             <label for="region" class="block text-sm font-bold font-poppins">Prefered
@@ -119,7 +134,10 @@
                             </select>
                         </div>
 
-                        <div class="col-span-6"><h3 class="font-poppins font-medium text-xl mt-4 uppercase text-blue">Prefered location</h3></div>
+                        <div class="col-span-6">
+                            <h3 class="font-poppins font-medium text-xl mt-4 uppercase text-blue">Prefered location
+                            </h3>
+                        </div>
 
 
                         <div class="col-span-6">
@@ -136,7 +154,8 @@
                 </div>
                 <div class="bg-gray-50 py-3 text-right mt-4">
 
-                    <a href="{{route('myprofile')}}" class="px-2 py-1 rounded bg-red text-white hover:scale-105 focus:outline-none transition duration-150 ease-in-out">Cancel</a>
+                    <a href="{{ route('myprofile') }}"
+                        class="px-2 py-1 rounded bg-red text-white hover:scale-105 focus:outline-none transition duration-150 ease-in-out">Cancel</a>
                     <x-primary-button>
                         {{ __('Update Information') }}
                     </x-primary-button>
