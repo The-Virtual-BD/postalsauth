@@ -22,7 +22,7 @@ class HomeController extends Controller
     {
 
         $setting = DB::table('settings')
-            ->where('property', 'moode')
+            ->where('property', 'mood')
             ->first();
 
         if ($setting->value == 2) {
