@@ -2,8 +2,14 @@
     <div class="py-6">
         <div class="container mx-auto ">
             <div class="rounded-t bg-white p-4 flex justify-start items-center shadow">
-                <div class="mx-6">
-                    <img src="{{ asset('images/avatarbig.png') }}" alt="" class="w-24 h-auto">
+                <div class="mx-6 relative group">
+                    <form id="studentppform" method="POST" action="{{ route('updateprofile', Auth::user()->id) }}" enctype="multipart/form-data" class="d-none">
+                        @csrf
+                        <input type="file" name="profile_picture" id="selectedFile" style="display: none;" />
+                    </form>
+                    {{-- <img src="{{ asset('images/avatarbig.png') }}" alt="" class="w-24 h-auto"> --}}
+                    <img src="{{ Auth::user()->profile->photo ? asset(Auth::user()->profile->photo) : asset('images/avatarbig.png') }}" alt="" class="w-24 h-auto rounded-full">
+                    <button class="bg-blue px-1 py-1 rounded text-xs text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden group-hover:block" id="ppChangeBtn" onclick="document.getElementById('selectedFile').click();">Change</button>
                 </div>
                 <div class="font-inter">
                     <h3 class="font-poppins font-medium text-xl">{{ Auth::user()->firstname . ' ' . Auth::user()->lastname }}
@@ -184,6 +190,10 @@
                 $("#tin").inputFilter(function(value) {
                     return /^\d*$/.test(value); // Allow digits only, using a RegExp
                 }, "Only digits allowed");
+
+                $("#selectedFile").on('input', function() {
+                    $("#studentppform").submit();
+                });
             });
         </script>
     </x-slot>

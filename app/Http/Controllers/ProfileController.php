@@ -77,13 +77,24 @@ class ProfileController extends Controller
     {
         // return $request;
         $user = User::findOrFail($id);
+        $profile = Profile::where('user_id',$id)->first();
+
+        if ($request->file('profile_picture')) {
+            $image = $request->file('profile_picture');
+            $image_full_name = time().'_'.$user->name.$user->id.'.'.$image->extension();
+            $upload_path = 'images/pp/';
+            $image_url = $upload_path.$image_full_name;
+            $success = $image->move($upload_path, $image_full_name);
+            $profile->photo = $image_url;
+            $profile->save();
+            return redirect()->route('myprofile');
+        }
         $user->firstname = $request->firstname;
         $user->lastname = $request->lastname;
         $user->phone = $request->phone;
         $user->save();
 
 
-        $profile = Profile::where('user_id',$id)->first();
 
         $profile->first_name = $request->firstname;
         $profile->last_name = $request->lastname;

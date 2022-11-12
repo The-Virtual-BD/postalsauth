@@ -1,6 +1,6 @@
 <div  {{ $attributes}}>
     <div class="mx-6">
-        <img src="{{asset('images/avatarbig.png')}}" alt="" class="w-24 h-auto">
+        <img src="{{ Auth::user()->profile->photo ? asset(Auth::user()->profile->photo) : asset('images/avatarbig.png') }}" alt="" class="w-24 h-auto rounded-full">
     </div>
     <div class="font-inter">
         <h3 class="font-poppins font-medium text-xl">{{Auth::user()->firstname.' '.Auth::user()->lastname}}</h3>
