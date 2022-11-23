@@ -2,14 +2,14 @@
     <div class="py-6">
         <div class="container mx-auto ">
             <div class="rounded-t bg-white p-4 flex justify-start items-center shadow">
-                <div class="mx-6 relative group">
+                <div class="mx-6 relative">
                     <form id="studentppform" method="POST" action="{{ route('updateprofile', Auth::user()->id) }}" enctype="multipart/form-data" class="d-none">
                         @csrf
                         <input type="file" name="profile_picture" id="selectedFile" style="display: none;" />
                     </form>
                     {{-- <img src="{{ asset('images/avatarbig.png') }}" alt="" class="w-24 h-auto"> --}}
-                    <img src="{{ Auth::user()->profile->photo ? asset(Auth::user()->profile->photo) : asset('images/avatarbig.png') }}" alt="" class="w-24 h-auto rounded-full">
-                    <button class="bg-blue px-1 py-1 rounded text-xs text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden group-hover:block" id="ppChangeBtn" onclick="document.getElementById('selectedFile').click();">Change</button>
+                    <img src="{{ Auth::user()->profile->photo ? asset(Auth::user()->profile->photo) : asset('images/avatarbig.png') }}" alt="" class="w-24 h-24 rounded-full">
+                    <span class="iconify absolute top-0 right-0 text-blue" data-icon="ph:pencil-fill" onclick="document.getElementById('selectedFile').click();"></span>
                 </div>
                 <div class="font-inter">
                     <h3 class="font-poppins font-medium text-xl">{{ Auth::user()->firstname . ' ' . Auth::user()->lastname }}
@@ -164,6 +164,32 @@
                         class="px-2 py-1 rounded bg-red text-white hover:scale-105 focus:outline-none transition duration-150 ease-in-out">Cancel</a>
                     <x-primary-button>
                         {{ __('Update Information') }}
+                    </x-primary-button>
+                </div>
+            </form>
+        </div>
+        <div class="container mx-auto bg-white rounded-md p-4 mt-6 shadow">
+            <form action="{{ route('updateprofile', Auth::user()->id) }}" method="POST">
+                @csrf
+                <div class="">
+                    <div class="grid grid-cols-6 gap-4">
+                        <div class="col-span-6">
+                            <h3 class="font-poppins font-medium text-xl mb-2 uppercase text-blue">Change Password</h3>
+                        </div>
+                        <div class="col-span-6">
+                            <label for="type" class="block text-sm font-bold font-poppins">New Password</label>
+                            <input type="password" name="password" id="password" class="block w-full rounded-md border-blue bg-lblue focus:bg-white focus:ring-0 sm:text-sm" required>
+                        </div>
+                        {{-- Confirm Password--}}
+                        <div class="col-span-6">
+                            <label for="companyname" class="block text-sm font-bold font-poppins">Confirm New Password</label>
+                            <input type="password" name="password_confirmation" id="password_confirmation" class="block w-full rounded-md border-blue bg-lblue focus:bg-white focus:ring-0 sm:text-sm" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 py-3 text-right mt-4">
+                    <x-primary-button>
+                        {{ __('Change Password') }}
                     </x-primary-button>
                 </div>
             </form>

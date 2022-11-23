@@ -10,5 +10,5 @@ class Gallery extends Model
     use HasFactory;
 
 
-    public $table = "galaries";
+    public $table = "galleries";
 }

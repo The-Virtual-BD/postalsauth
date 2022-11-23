@@ -19,7 +19,7 @@
             </div>
 
             <!-- Last Name -->
-            <div>
+            <div class="mt-4">
                 <x-input-label for="lastname" :value="__('Last Name')" />
 
                 <x-text-input id="lastname" class="block mt-1 w-full" type="text" name="lastname" :value="old('lastname')" required />
@@ -36,7 +36,7 @@
                 <x-input-error :messages="$errors->get('email')" class="mt-2" />
             </div>
             <!-- Phone Number -->
-            <div>
+            <div class="mt-4">
                 <x-input-label for="phone" :value="__('Phone Number')" />
 
                 <x-text-input id="phone" class="block mt-1 w-full" type="text" name="phone" :value="old('phone')" required />
@@ -45,8 +45,8 @@
             </div>
 
             <!-- NIB Number -->
-            <div>
-                <x-input-label for="nib" :value="__('NIB Number')" />
+            <div class="mt-4">
+                <x-input-label for="nib" :value="__('NIB Number ( For Business account provide business NIB )')" />
 
                 <x-text-input id="nib" class="block mt-1 w-full" type="text" name="nib" :value="old('nib')" required />
 

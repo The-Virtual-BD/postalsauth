@@ -37,10 +37,9 @@
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
                             <td>NAS</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify mr-1" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -48,10 +47,9 @@
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
                             <td>NAS</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify mr-1" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -59,10 +57,9 @@
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
                             <td>NAS</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify mr-1" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -70,10 +67,9 @@
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
                             <td>NAS</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify mr-1" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -81,10 +77,9 @@
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
                             <td>NAS</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify mr-1" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -92,10 +87,9 @@
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
                             <td>NAS</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify mr-1" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                         </tr>
                         <tr>
                             <td>203222</td>
@@ -103,10 +97,9 @@
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
                             <td>NAS</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify mr-1" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                         </tr>
                     </tbody>
 
@@ -137,7 +130,7 @@
                             <td>854462</td>
                             <td>NAS</td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td>100$</td>
@@ -153,7 +146,7 @@
                             <td>854462</td>
                             <td>NAS</td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td>100$</td>
@@ -169,7 +162,7 @@
                             <td>854462</td>
                             <td>NAS</td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td>100$</td>
@@ -185,7 +178,7 @@
                             <td>854462</td>
                             <td>NAS</td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td>100$</td>
@@ -201,7 +194,7 @@
                             <td>854462</td>
                             <td>NAS</td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td>100$</td>
@@ -217,7 +210,7 @@
                             <td>854462</td>
                             <td>NAS</td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td>100$</td>
@@ -233,7 +226,7 @@
                             <td>854462</td>
                             <td>NAS</td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td>100$</td>
@@ -249,7 +242,7 @@
                             <td>854462</td>
                             <td>NAS</td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td>100$</td>
@@ -265,7 +258,7 @@
                             <td>854462</td>
                             <td>NAS</td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td>100$</td>
@@ -281,7 +274,7 @@
                             <td>854462</td>
                             <td>NAS</td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td>100$</td>
@@ -316,24 +309,9 @@
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
                             <td>NAS</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
-                        </tr>
-                        <tr>
-                            <td>203222</td>
-                            <td>ProductZ</td>
-                            <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
-                            <td>854462</td>
-                            <td>NAS</td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
@@ -344,24 +322,9 @@
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
                             <td>NAS</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
-                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
-                        </tr>
-                        <tr>
-                            <td>203222</td>
-                            <td>ProductZ</td>
-                            <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
-                            <td>854462</td>
-                            <td>NAS</td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
@@ -372,10 +335,9 @@
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
                             <td>NAS</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
@@ -386,10 +348,48 @@
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
                             <td>NAS</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
+                        </tr>
+                        <tr>
+                            <td>203222</td>
+                            <td>ProductZ</td>
+                            <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
+                            <td>854462</td>
+                            <td>NAS</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
+                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
+                        </tr>
+                        <tr>
+                            <td>203222</td>
+                            <td>ProductZ</td>
+                            <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
+                            <td>854462</td>
+                            <td>NAS</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
+                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
+                        </tr>
+                        <tr>
+                            <td>203222</td>
+                            <td>ProductZ</td>
+                            <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
+                            <td>854462</td>
+                            <td>NAS</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
                                         class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
@@ -414,60 +414,63 @@
                             <td>203222</td>
                             <td>ProductZ</td>
                             <td>854462</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
                             <td>ProductZ</td>
                             <td>854462</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
                             <td>ProductZ</td>
                             <td>854462</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
                             <td>ProductZ</td>
                             <td>854462</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
                             <td>ProductZ</td>
                             <td>854462</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
                             <td>203222</td>
                             <td>ProductZ</td>
                             <td>854462</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
+                        </tr>
+                        <tr>
+                            <td>203222</td>
+                            <td>ProductZ</td>
+                            <td>854462</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                     </tbody>
@@ -492,10 +495,9 @@
                             <td>ProductZ</td>
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
@@ -503,10 +505,9 @@
                             <td>ProductZ</td>
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
@@ -514,10 +515,9 @@
                             <td>ProductZ</td>
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
@@ -525,10 +525,9 @@
                             <td>ProductZ</td>
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
@@ -536,10 +535,9 @@
                             <td>ProductZ</td>
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
-                            <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                         <tr>
@@ -547,10 +545,19 @@
                             <td>ProductZ</td>
                             <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
                             <td>854462</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-upload"></span> Upload</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
+                            <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
+                        </tr>
+                        <tr>
+                            <td>203222</td>
+                            <td>ProductZ</td>
+                            <td><img src="{{ asset('images/avatar.png') }}" alt="" class="w-4"></td>
+                            <td>854462</td>
+                            <td><button class="flex justify-center items-center text-blue font-semibold ">Return</button></td>
                             <td><button class="flex justify-center items-center text-blue font-semibold "><span
-                                        class="iconify" data-icon="bxs:cloud-download"></span>Download</button></td>
+                                        class="iconify" data-icon="ic:outline-remove-red-eye"></span>View</button></td>
                             <td><a href="{{ route('track') }}" class="flex justify-center items-center text-blue font-semibold ">Track</a></td>
                         </tr>
                     </tbody>
@@ -564,27 +571,7 @@
 
     <x-slot name="script">
         <script>
-            $('#standbyTable').DataTable({
-                searching: false,
-                paging: false,
-                info: false
-            });
-            $('#invoicedTable').DataTable({
-                searching: false,
-                paging: false,
-                info: false
-            });
-            $('#pendinginvoiceTable').DataTable({
-                searching: false,
-                paging: false,
-                info: false
-            });
-            $('#bookingTable').DataTable({
-                searching: false,
-                paging: false,
-                info: false
-            });
-            $('#cancledTable').DataTable({
+            $('#standbyTable,#invoicedTable,#pendinginvoiceTable,#bookingTable,#cancledTable').DataTable({
                 searching: false,
                 paging: false,
                 info: false

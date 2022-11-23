@@ -100,8 +100,8 @@
                             <x-dropdown align="right" width="48">
                                 <x-slot name="trigger">
                                     <span class="flex justify-center items-center"><img
-                                            src="{{ asset('images/avatar.png') }}" alt=""
-                                            class="w-10 h-auto mr-2">{{ Auth::user()->firstname }}</span>
+                                            src="{{ Auth::user()->profile->photo ? asset(Auth::user()->profile->photo) : asset('images/avatarbig.png') }}" alt=""
+                                            class="w-10 h-10 rounded-full mr-2">{{ Auth::user()->firstname }}</span>
                                 </x-slot>
 
                                 <x-slot name="content">
@@ -171,9 +171,7 @@
                         <li class="py-2 hover:text-blue">
                             <x-dropdown align="right" width="48">
                                 <x-slot name="trigger">
-                                    <span class="flex justify-center items-center"><img
-                                            src="{{ asset('images/avatar.png') }}" alt=""
-                                            class="w-10 h-auto mr-2">{{ Auth::user()->firstname }}</span>
+                                    <span class="flex justify-center items-center"><img src="{{ Auth::user()->profile->photo ? asset(Auth::user()->profile->photo) : asset('images/avatarbig.png') }}" alt="" class="w-10 h-10 rounded-full mr-2">{{ Auth::user()->firstname }}</span>
                                 </x-slot>
 
                                 <x-slot name="content">

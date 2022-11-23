@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Profile;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+
 
 class ProfileController extends Controller
 {
@@ -78,6 +80,16 @@ class ProfileController extends Controller
         // return $request;
         $user = User::findOrFail($id);
         $profile = Profile::where('user_id',$id)->first();
+
+        if ($request->password) {
+            $request->validate([
+                'password' => ['required', 'confirmed'],
+            ]);
+
+            $user->password = Hash::make($request->password);
+            $user->save();
+            return redirect()->route('myprofile');
+        }
 
         if ($request->file('profile_picture')) {
             $image = $request->file('profile_picture');
