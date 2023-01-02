@@ -53,9 +53,15 @@ class User extends Authenticatable
     protected $with = ['profile'];
 
 
-    function profile()
+    public function profile()
     {
-        // return $this->hasOne(P);
         return $this->hasOne(Profile::class);
     }
+
+    public function preferedlocation()
+    {
+        return $this->belongsTo(Location::class,'location_id');
+    }
+
+
 }

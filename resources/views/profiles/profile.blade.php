@@ -76,7 +76,7 @@
                     </div>
                     <div class="grid grid-cols-2 text-sm my-1">
                         <p class="font-bold">Prefered location :</p>
-                        <p>{{Auth::user()->profile->location}}</p>
+                        <p class="capitalize">{{Auth::user()->preferedlocation->name}}</p>
                     </div>
 
                 </div>

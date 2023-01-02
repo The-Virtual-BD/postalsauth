@@ -149,11 +149,12 @@
                         <div class="col-span-6">
                             <label for="location" class="block text-sm font-bold font-poppins">Prefered
                                 location</label>
-                            <select id="location" name="location"
-                                class=" block w-full rounded-md border border-blue bg-lblue focus:bg-white focus:ring-0 py-2 px-3 shadow-sm sm:text-sm">
-                                <option value="1">Locker: Fusion Superplex | Carmichael</option>
-                                <option value="2">Store: Prince Charles, Prince Charles Dr.</option>
-                                <option value="3">Drop Off: San Salvador</option>
+                            <select id="location" name="location" class="capitalize block w-full rounded-md border border-blue bg-lblue focus:bg-white focus:ring-0 py-2 px-3 shadow-sm sm:text-sm">
+                                @forelse ($locations as $location)
+                                <option value="{{$location->id}}" class="">{{$location->name}}</option>
+                                @empty
+                                <option disabled="true">No location avilable right now</option>
+                                @endforelse
                             </select>
                         </div>
                     </div>

@@ -108,6 +108,15 @@
                                     <x-nav-link :href="route('myprofile')" :active="request()->routeIs('myprofile')">
                                         {{ __('Profile') }}
                                     </x-nav-link>
+                                    <x-nav-link :href="route('packages')" :active="request()->routeIs('packages')">
+                                        {{ __('Manage Packages') }}
+                                    </x-nav-link>
+                                    <x-nav-link :href="route('pickup')" :active="request()->routeIs('pickup')">
+                                        {{ __('Pickup') }}
+                                    </x-nav-link>
+                                    <x-nav-link :href="route('incomming')" :active="request()->routeIs('incomming')">
+                                        {{ __('Incoming Package') }}
+                                    </x-nav-link>
                                     <!-- Authentication -->
                                     <form method="POST" action="{{ route('logout') }}">
                                         @csrf
@@ -120,37 +129,15 @@
                                 </x-slot>
                             </x-dropdown>
                         </li>
-                        <li class=" mx-1">
-                            <x-dropdown align="right" width="48">
-                                <x-slot name="trigger">
-                                    <button
-                                        class="flex justify-between items-center px-2 py-1 bg-gradient-to-tr rounded from-mblue to-dblue text-white hover:scale-105 focus:outline-none transition duration-150 ease-in-out">
-                                        <div>Backoffice</div>
-                                        <span class="iconify ml-1" data-icon="akar-icons:chevron-down"></span>
-                                    </button>
-                                </x-slot>
-
-                                <x-slot name="content">
-                                    <x-nav-link :href="route('packages')" :active="request()->routeIs('packages')">
-                                        {{ __('Manage Packages') }}
-                                    </x-nav-link>
-                                    <x-nav-link :href="route('pickup')" :active="request()->routeIs('pickup')">
-                                        {{ __('Pickup') }}
-                                    </x-nav-link>
-                                    <x-nav-link :href="route('incomming')" :active="request()->routeIs('incomming')">
-                                        {{ __('Incoming Package') }}
-                                    </x-nav-link>
-                                </x-slot>
-                            </x-dropdown>
-                        </li>
 
 
                     </ul>
                 </div>
+
                 <div class="col-span-2 sm:hidden">
                     <ul class="nav-main flex items-center gap-2 sm:gap-0">
                         <li class="py-2 cursor-pointer hover:text-blue font-inter text-base relative">
-                            <x-dropdown align="left" width="48">
+                            <x-dropdown align="left" class="w-12 mr-4">
                                 <x-slot name="trigger">
                                     <div
                                         class="after:bg-red after:absolute after:z-30 after:content-[''] after:w-2 after:h-2 relative after:top-0 after:right-0 after:rounded">
@@ -177,6 +164,15 @@
                                 <x-slot name="content">
                                     <x-nav-link :href="route('myprofile')" :active="request()->routeIs('myprofile')">
                                         {{ __('Profile') }}
+                                    </x-nav-link>
+                                    <x-nav-link :href="route('packages')" :active="request()->routeIs('packages')">
+                                        {{ __('Manage Packages') }}
+                                    </x-nav-link>
+                                    <x-nav-link :href="route('pickup')" :active="request()->routeIs('pickup')">
+                                        {{ __('Pickup') }}
+                                    </x-nav-link>
+                                    <x-nav-link :href="route('incomming')" :active="request()->routeIs('incomming')">
+                                        {{ __('Incoming Package') }}
                                     </x-nav-link>
                                     <!-- Authentication -->
                                     <form method="POST" action="{{ route('logout') }}">
@@ -229,16 +225,6 @@
                                     </x-nav-link>
                                     <x-nav-link :href="route('rates')" :active="request()->routeIs('rates')">
                                         {{ __('Rates') }}
-                                    </x-nav-link>
-                                    <hr class="text-blue">
-                                    <x-nav-link :href="route('packages')" :active="request()->routeIs('packages')">
-                                        {{ __('Manage Packages') }}
-                                    </x-nav-link>
-                                    <x-nav-link :href="route('pickup')" :active="request()->routeIs('pickup')">
-                                        {{ __('Pickup') }}
-                                    </x-nav-link>
-                                    <x-nav-link :href="route('incomming')" :active="request()->routeIs('incomming')">
-                                        {{ __('Incoming Package') }}
                                     </x-nav-link>
                                 </x-slot>
                             </x-dropdown>

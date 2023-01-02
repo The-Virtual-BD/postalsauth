@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Location;
 use Illuminate\Http\Request;
 use App\Models\Profile;
 use App\Models\User;
@@ -18,7 +19,6 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        // return Auth::user()->profile;
         return view('profiles.profile');
     }
 
@@ -63,8 +63,9 @@ class ProfileController extends Controller
      */
     public function edit()
     {
+        $locations = Location::all();
 
-        return view('profiles.edit');
+        return view('profiles.edit',compact('locations'));
 
     }
 
@@ -104,7 +105,7 @@ class ProfileController extends Controller
         $user->firstname = $request->firstname;
         $user->lastname = $request->lastname;
         $user->phone = $request->phone;
-        $user->save();
+
 
 
 
@@ -122,7 +123,13 @@ class ProfileController extends Controller
         $profile->address = $request->about;
         $profile->house = $request->house;
         $profile->region = $request->region;
-        $profile->location = $request->location;
+
+        if ($request->location) {
+            $user->phone = $request->location;
+            $profile->location_id = $request->location;
+        }
+
+        $user->save();
         $profile->save();
 
         return redirect()->route('myprofile');
