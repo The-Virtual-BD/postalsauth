@@ -31,7 +31,7 @@
                             <x-nav-link :href="route('jobs.index')" :active="request()->routeIs('jobs.index')">
                                 {{ __('Jobs') }}
                             </x-nav-link>
-                            <x-nav-link :href="route('jobs.index')" :active="request()->routeIs('jobs.index')">
+                            <x-nav-link :href="route('trainings')" :active="request()->routeIs('trainings')">
                                 {{ __('Training') }}
                             </x-nav-link>
                         </x-slot>

@@ -98,6 +98,13 @@
                                 </div>
                             </div>
                         </div>
+
+                        <ul>
+                            <li><a href="{{route('emails.welcome')}}" target="_blank">Welcome Email</a></li>
+                            <li><a href="{{route('emails.password')}}" target="_blank">Password Email</a></li>
+                            <li><a href="{{route('emails.profileupdate')}}" target="_blank">Update Email</a></li>
+                            <li><a href="{{route('emails.accountdelete')}}" target="_blank">Account Delete Email</a></li>
+                        </ul>
                     </div>
                 </div>
 

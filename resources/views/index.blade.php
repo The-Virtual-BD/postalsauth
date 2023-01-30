@@ -322,7 +322,7 @@
             <div class="">
                 <form action="" method="post" class="flex flex-col items-center py-10 justify-center">
                     <input type="email" name="" id="" placeholder="Email Address"
-                        class="w-full  drop-shadow-md rounded p-2 mb-4">
+                        class="w-full rounded p-2 mb-4 focus:ring-0 border border-gray">
                     <button type="submit"
                         class="btn w-40 border border-blue rounded py-2 px-4 text-blue hover:text-white hover:bg-gradient-to-tr hover:from-mblue hover:to-dblue">Sign
                         Up</button>

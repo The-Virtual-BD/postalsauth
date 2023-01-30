@@ -21,7 +21,7 @@
                         <li><a href="{{ route('jobs.index') }}"
                                 class="w-full block text-blue px-4 hover:bg-gradient-to-tr hover:from-mblue hover:to-dblue hover:text-white">Jobs</a>
                         </li>
-                        <li><a href=""
+                        <li><a href="{{route('trainings')}}"
                                 class="w-full block text-blue px-4 hover:bg-gradient-to-tr hover:from-mblue hover:to-dblue hover:text-white">Training</a>
                         </li>
                     </ul>
@@ -124,7 +124,7 @@
                     <li><a href="{{ route('jobs.index') }}"
                             class="w-full block text-blue px-4 hover:bg-gradient-to-tr hover:from-mblue hover:to-dblue hover:text-white">Jobs</a>
                     </li>
-                    <li><a href=""
+                    <li><a href="{{route('trainings')}}"
                             class="w-full block text-blue px-4 hover:bg-gradient-to-tr hover:from-mblue hover:to-dblue hover:text-white">Training</a>
                     </li>
                 </ul>

@@ -1,0 +1,7 @@
+border-radius: 0.25rem;
+width: 10rem;
+-webkit-appearance: button;
+background-color: transparent;
+background-image: none;
+cursor: pointer;
+text-transform: none;

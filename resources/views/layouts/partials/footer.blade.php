@@ -83,7 +83,7 @@
         </div>
     </div>
     <div class="text-center py-3">
-        <p>&copy; 2022. All rights reserved.</p>
+        <p>&copy; {{date('Y')}}. All rights reserved.</p>
         <p>Powered By <a href="https://www.sunrise-bahamas.net/" class="text-blue" target="_blank">SunRise
                 Communications</a> & <a href="https://www.thevirtualbd.com/" class="text-blue" target="_blank">The
                 Virtual BD</a></p>

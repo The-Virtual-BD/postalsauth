@@ -6,9 +6,9 @@
     <div class="container mx-auto h-full text-center mt-9">
         <div class="sm:w-3/5 mx-auto">
             <form action="" method="post" class="flex flex-col items-center px-4 sm:px-0" id="contactform">
-                <input type="text" name="" id="" class="mb-4 rounded-sm py-2 px-2.5 sm:w-full" placeholder="Name">
-                <input type="email" name="" id="" class="mb-4 rounded-sm py-2 px-2.5 sm:w-full" placeholder="Email">
-                <textarea name="" id="" rows="5" class="mb-4 rounded-sm py-2 px-2.5 sm:w-full" placeholder="Message"></textarea>
+                <input type="text" name="" id="" class="mb-4 rounded border-none py-2 px-2.5 sm:w-full" placeholder="Name">
+                <input type="email" name="" id="" class="mb-4 rounded border-none py-2 px-2.5 sm:w-full" placeholder="Email">
+                <textarea name="" id="" rows="5" class="mb-4 rounded border-none py-2 px-2.5 sm:w-full" placeholder="Message"></textarea>
                 <button type="submit" class="font-poppins text-lg font-medium bg-white py-4 px-9 rounded-sm  text-center text-blue btn hover:scale-110">Submit</button>
             </form>
         </div>

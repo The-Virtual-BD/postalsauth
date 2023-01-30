@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\PasswordUpdateMail;
 use App\Models\Location;
 use Illuminate\Http\Request;
 use App\Models\Profile;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-
+use Illuminate\Support\Facades\Mail;
 
 class ProfileController extends Controller
 {
@@ -89,6 +90,12 @@ class ProfileController extends Controller
 
             $user->password = Hash::make($request->password);
             $user->save();
+
+            try{
+                $sendmail = Mail::to($user->email)->send(new PasswordUpdateMail($user));
+            }catch (\Exception $exception){}
+
+
             return redirect()->route('myprofile');
         }
 
@@ -102,12 +109,10 @@ class ProfileController extends Controller
             $profile->save();
             return redirect()->route('myprofile');
         }
+
         $user->firstname = $request->firstname;
         $user->lastname = $request->lastname;
         $user->phone = $request->phone;
-
-
-
 
         $profile->first_name = $request->firstname;
         $profile->last_name = $request->lastname;
@@ -125,7 +130,7 @@ class ProfileController extends Controller
         $profile->region = $request->region;
 
         if ($request->location) {
-            $user->phone = $request->location;
+            $user->location_id = $request->location;
             $profile->location_id = $request->location;
         }
 
