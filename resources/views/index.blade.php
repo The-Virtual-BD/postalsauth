@@ -29,165 +29,25 @@
         </div>
 
         <div class="container mx-auto team grid grid-cols-1 sm:grid-cols-4 pt-9 gap-4 px-4 sm:px-0 owl-carousel owl-theme">
+            @foreach ($teamMembers as $member)
 
             {{-- JENNIFER JOHNSON --}}
             <div class="item bg-white drop-shadow-md">
-                <img src="{{ asset('images/team/JENNIFER-JOHNSON.jpg') }}" alt="" srcset=""
+                <img src="http://admintwst.z4id.com/{{$member->photo}}" alt="" srcset=""
                     class="w-full  rounded-sm">
                 <div class="text-center py-7">
-                    <h3 class="font-inter text-base font-semibold text-black">Jennifer Johnson</h3>
-                    <p class="font-inter text-base text-black font-normal">Postmaster General</p>
+                    <h3 class="font-inter text-base font-semibold text-black">{{$member->name}}</h3>
+                    <p class="font-inter text-base text-black font-normal">{{$member->designation}}</p>
                     <div class="flex justify-center items-center mt-2">
-                        <a href="mailto:jenniferjohnson@bahamas.gov.bs"><span class="iconify text-blue text-3xl mx-2"
+                        <a href="mailto:{{$member->email}}"><span class="iconify text-blue text-3xl mx-2"
                                 data-icon="eva:email-fill"></span></a>
-                        <a href="tel:+302-5800"><span class="iconify text-blue text-3xl mx-2"
+                        <a href="tel:{{$member->phone}}"><span class="iconify text-blue text-3xl mx-2"
                                 data-icon="ci:phone"></span></a>
                     </div>
                 </div>
             </div>
+            @endforeach
 
-            {{-- MABELENE MILLER --}}
-            <div class="item bg-white drop-shadow-md">
-                <img src="{{ asset('images/team/MABELENE-MILLER.jpg') }}" alt="" srcset=""
-                    class="w-full  rounded-sm">
-                <div class="text-center py-7">
-                    <h3 class="font-inter text-base font-semibold text-black">Mabelene Miller</h3>
-                    <p class="font-inter text-base text-black font-normal">Sr Assistant Secretary Admin</p>
-                    <div class="flex justify-center items-center mt-2">
-                        <a href="mailto:mabelene1@yahoo.com"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="eva:email-fill"></span></a>
-                        <a href="tel:+302-5800"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="ci:phone"></span></a>
-                    </div>
-                </div>
-            </div>
-
-            {{-- STEPHEN WHYLLY --}}
-            <div class="item bg-white drop-shadow-md">
-                <img src="{{ asset('images/team/STEPHEN-WHYLLY.jpg') }}" alt="" srcset=""
-                    class="w-full rounded-sm">
-                <div class="text-center py-7">
-                    <h3 class="font-inter text-base font-semibold text-black">Steven Whylly</h3>
-                    <p class="font-inter text-base text-black font-normal">Sr. Superintendent</p>
-                    <div class="flex justify-center items-center mt-2">
-                        <a href="mailto:stephenwhylly@bahamas.gov.bs"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="eva:email-fill"></span></a>
-                        <a href="tel:+302-5800"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="ci:phone"></span></a>
-                    </div>
-                </div>
-            </div>
-
-            {{-- BETTY SWEETING --}}
-            <div class="item bg-white drop-shadow-md">
-                <img src="{{ asset('images/team/BETTY-SWEETING.jpg') }}" alt="" srcset=""
-                    class="w-full rounded-sm">
-                <div class="text-center py-7">
-                    <h3 class="font-inter text-base font-semibold text-black">Betty Sweeting</h3>
-                    <p class="font-inter text-base text-black font-normal">Sr. Superintendent Cashier’s Office</p>
-                    <div class="flex justify-center items-center mt-2">
-                        <a href="mailto:bettysweeting@bahamas.gov.bs"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="eva:email-fill"></span></a>
-                        <a href="tel:+302-5800"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="ci:phone"></span></a>
-                    </div>
-                </div>
-            </div>
-
-
-            {{-- PETER BETHELL --}}
-            <div class="item bg-white drop-shadow-md">
-                <img src="{{ asset('images/team/PETER-BETHELL.jpg') }}" alt="" srcset=""
-                    class="w-full rounded-sm">
-                <div class="text-center py-7">
-                    <h3 class="font-inter text-base font-semibold text-black">Peter Bethel</h3>
-                    <p class="font-inter text-base text-black font-normal">Accountant Admin</p>
-                    <div class="flex justify-center items-center mt-2">
-                        <a href="mailto:peterbethell@bahamas.gov.bs"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="eva:email-fill"></span></a>
-                        <a href="tel:+302-5800"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="ci:phone"></span></a>
-                    </div>
-                </div>
-            </div>
-
-            {{-- CHERYL KEMP --}}
-            <div class="item bg-white drop-shadow-md">
-                <img src="{{ asset('images/team/CHERYL-KEMP.jpg') }}" alt="" srcset=""
-                    class="w-full rounded-sm">
-                <div class="text-center py-7">
-                    <h3 class="font-inter text-base font-semibold text-black">Cheryl Kemp</h3>
-                    <p class="font-inter text-base text-black font-normal">Superintendent Parcel Post Operations</p>
-                    <div class="flex justify-center items-center mt-2">
-                        <a href="mailto:cheryldenicekemp@bahamas.gov.bs"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="eva:email-fill"></span></a>
-                        <a href="tel:+302-5800"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="ci:phone"></span></a>
-                    </div>
-                </div>
-            </div>
-
-            {{-- SUZLA WHYLLY --}}
-            <div class="item bg-white drop-shadow-md">
-                <img src="{{ asset('images/team/SUZLA-WHYLLY.jpg') }}" alt="" srcset=""
-                    class="w-full rounded-sm">
-                <div class="text-center py-7">
-                    <h3 class="font-inter text-base font-semibold text-black">Suzla Whylly</h3>
-                    <p class="font-inter text-base text-black font-normal">Financial Officer</p>
-                    <div class="flex justify-center items-center mt-2">
-                        <a href="mailto:suzlawhylly@bahamas.gov.bs"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="eva:email-fill"></span></a>
-                        <a href="tel:+302-5800"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="ci:phone"></span></a>
-                    </div>
-                </div>
-            </div>
-
-            {{-- VALDERINE HENFIELD --}}
-            <div class="item bg-white drop-shadow-md">
-                <img src="{{ asset('images/img.jpg') }}" alt="" srcset="" class="w-full rounded-sml">
-                <div class="text-center py-7">
-                    <h3 class="font-inter text-base font-semibold text-black">Valderine Henfield</h3>
-                    <p class="font-inter text-base text-black font-normal">Sr. Assistant Secretary HR</p>
-                    <div class="flex justify-center items-center mt-2">
-                        <a href="mailto:valderinehenfield@bahamas.gov.bs"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="eva:email-fill"></span></a>
-                        <a href="tel:+302-5800"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="ci:phone"></span></a>
-                    </div>
-                </div>
-            </div>
-
-            {{-- SHEILA GIBSON --}}
-            <div class="item bg-white drop-shadow-md">
-                <img src="{{ asset('images/img.jpg') }}" alt="" srcset="" class="w-full rounded-sm">
-                <div class="text-center py-7">
-                    <h3 class="font-inter text-base font-semibold text-black">Sheila Gibson</h3>
-                    <p class="font-inter text-base text-black font-normal">Sr. Superintendent Savings Bank</p>
-                    <div class="flex justify-center items-center mt-2">
-                        <a href="mailto:sheilagibson@bahamas.gov.bs"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="eva:email-fill"></span></a>
-                        <a href="tel:+302-5800"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="ci:phone"></span></a>
-                    </div>
-                </div>
-            </div>
-
-            {{-- APRIL SIMMS --}}
-            <div class="item bg-white drop-shadow-md">
-                <img src="{{ asset('images/img.jpg') }}" alt="" srcset="" class="w-full rounded-sm">
-                <div class="text-center py-7">
-                    <h3 class="font-inter text-base font-semibold text-black">Apryl Simmons</h3>
-                    <p class="font-inter text-base text-black font-normal">Sr. Superintendent NP & Family Islands</p>
-                    <div class="flex justify-center items-center mt-2">
-                        <a href="mailto:aprilsimms@bahamas.gov.bs"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="eva:email-fill"></span></a>
-                        <a href="tel:+302-5800"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="ci:phone"></span></a>
-
-                    </div>
-                </div>
-            </div>
 
 
         </div>

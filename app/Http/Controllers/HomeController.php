@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Query;
+use App\Models\TeamMember;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -29,8 +32,14 @@ class HomeController extends Controller
             return view('ud');
         }
 
-        return view('index');
+
+        $teamMembers = TeamMember::where('status', 1)->get();
+
+        return view('index',compact('teamMembers'));
     }
+
+
+
     // faq page
     public function faq()
     {
@@ -41,6 +50,32 @@ class HomeController extends Controller
     {
         return view('contact');
     }
+
+    public function contactsend(Request $request)
+    {
+        $subscribe = Query::create([
+            'name' => $request->name,
+            'phone' => $request->phone,
+            'email' => $request->email,
+            'message' => $request->message,
+        ]);
+
+        $msg = 'Thanks for contucting us. We wil get to you soon.';
+        return response()->json(['status' => 'success', 'message' => 'Thanks for contucting us. We wil get to you soon.']);
+
+
+        // if ($subscribe) {
+        //     try{
+        //         $sendmail = Mail::to($subscribe->email)->send(new QueryMail($msg));
+        //     }catch (\Exception $exception){}
+
+        //     return response()->json(['status' => 'success', 'message' => 'Thanks for contucting us. We wil get to you soon.']);
+        // }else{
+        //     return response()->json(['status' => 'error', 'message' => 'Something wrong !']);
+        // }
+    }
+
+
     // mission and vission page
     public function mission()
     {

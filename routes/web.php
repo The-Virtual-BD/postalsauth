@@ -18,6 +18,7 @@ Route::get('/dashboard', function () {
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/faq', [HomeController::class, 'faq'])->name('faq');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+Route::post('/contactUs/send', [HomeController::class, 'contactsend']);
 Route::get('/mission', [HomeController::class, 'mission'])->name('mission');
 
 Route::get('/service', [HomeController::class, 'service'])->name('service');
