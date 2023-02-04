@@ -7,16 +7,20 @@
     {{-- Minister --}}
     <div class="container mx-auto minister grid grid-cols-1 sm:grid-cols-4 py-20 sm:gap-14">
         <div class="flex justify-center items-center">
-            <img src="{{ asset('images/team/JENNIFER-JOHNSON.jpg') }}" class="border-blue rounded-full border-4 w-48 sm:w-72"
-                alt="Mabelene Miller">
+            <img src="{{ asset('images/team/JENNIFER-JOHNSON.jpg') }}"
+                class="border-blue rounded-full border-4 w-48 sm:w-72" alt="Mabelene Miller">
         </div>
         <div class="col-span-3 flex flex-col justify-center p-8 sm:p-0 text-center sm:text-left">
-            <p class="font-inter text-base sm:text-xl font-light">Welcome to a new and improved postal experience. We at the Bahamas Post
+            <p class="font-inter text-base sm:text-xl font-light">Welcome to a new and improved postal experience. We at
+                the Bahamas Post
                 Office are cognizant of the demand of our customers for a postal product that is efficient, timely, and
-                flexible enough to adapt to an ever-evolving postal market. We heard you and made the bold steps to upgrade,
+                flexible enough to adapt to an ever-evolving postal market. We heard you and made the bold steps to
+                upgrade,
                 transform, and expand our services, using the latest technological applications to bring to you, the
-                customer, a superior postal product. <br>You will find that our online e-commerce postal delivery service is
-                user-friendly to individual shopper, and small business entrepreneurial operators, alike. <br>Your Bahamas
+                customer, a superior postal product. <br>You will find that our online e-commerce postal delivery
+                service is
+                user-friendly to individual shopper, and small business entrepreneurial operators, alike. <br>Your
+                Bahamas
                 Postal service, will ship it, and deliver it, at the best price, and with better service.</p>
             <h2 class="font-semibold text-2xl text-black mt-7">Jennifer Johnson<br>Postmaster General</h2>
         </div>
@@ -28,24 +32,24 @@
             <p class="bg-blue inline-block p-1 rounded text-white mt-2 px-4">Get in touch with our team</p>
         </div>
 
-        <div class="container mx-auto team grid grid-cols-1 sm:grid-cols-4 pt-9 gap-4 px-4 sm:px-0 owl-carousel owl-theme">
+        <div
+            class="container mx-auto team grid grid-cols-1 sm:grid-cols-4 pt-9 gap-4 px-4 sm:px-0 owl-carousel owl-theme">
             @foreach ($teamMembers as $member)
-
-            {{-- JENNIFER JOHNSON --}}
-            <div class="item bg-white drop-shadow-md">
-                <img src="http://admintwst.z4id.com/{{$member->photo}}" alt="" srcset=""
-                    class="w-full  rounded-sm">
-                <div class="text-center py-7">
-                    <h3 class="font-inter text-base font-semibold text-black">{{$member->name}}</h3>
-                    <p class="font-inter text-base text-black font-normal">{{$member->designation}}</p>
-                    <div class="flex justify-center items-center mt-2">
-                        <a href="mailto:{{$member->email}}"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="eva:email-fill"></span></a>
-                        <a href="tel:{{$member->phone}}"><span class="iconify text-blue text-3xl mx-2"
-                                data-icon="ci:phone"></span></a>
+                {{-- JENNIFER JOHNSON --}}
+                <div class="item bg-white drop-shadow-md">
+                    <img src="http://admintwst.z4id.com/{{ $member->photo }}" alt="" srcset=""
+                        class="w-full  rounded-sm">
+                    <div class="text-center py-7">
+                        <h3 class="font-inter text-base font-semibold text-black">{{ $member->name }}</h3>
+                        <p class="font-inter text-base text-black font-normal">{{ $member->designation }}</p>
+                        <div class="flex justify-center items-center mt-2">
+                            <a href="mailto:{{ $member->email }}"><span class="iconify text-blue text-3xl mx-2"
+                                    data-icon="eva:email-fill"></span></a>
+                            <a href="tel:{{ $member->phone }}"><span class="iconify text-blue text-3xl mx-2"
+                                    data-icon="ci:phone"></span></a>
+                        </div>
                     </div>
                 </div>
-            </div>
             @endforeach
 
 
@@ -83,8 +87,10 @@
             <div class="col-span-2">
                 <h2 class="font-poppins font-semibold text-4xl text-black">We Deliver</h2>
                 <p class="bg-blue inline-block p-1 rounded text-white mt-2 px-4">We deliver right on time</p>
-                <p class="font-inter font-normal text-lg sm:text-2xl text-black mt-4">The new Postal courier service will
-                    now offer delivery services to your home and businesses. This option is available for online payments at
+                <p class="font-inter font-normal text-lg sm:text-2xl text-black mt-4">The new Postal courier service
+                    will
+                    now offer delivery services to your home and businesses. This option is available for online
+                    payments at
                     check out.</p>
                 <button
                     class="btn font-poppins justify-between items-center p-2.5 border border-blue rounded text-blue mt-9 hidden sm:flex hover:text-white hover:bg-gradient-to-tr hover:from-mblue hover:to-dblue">
@@ -119,7 +125,8 @@
                     <img src="{{ asset('images/HIW Img 01.png') }}" alt="" srcset=""
                         class="w-full rounded-sm">
                     <div class="text-center py-7">
-                        <p class="font-poppins font-medium text-base p-2 sm:text-lg text-blue">Place an order online & <br>
+                        <p class="font-poppins font-medium text-base p-2 sm:text-lg text-blue">Place an order online &
+                            <br>
                             ship to Bahamas Postal Service US</p>
                     </div>
                 </div>
@@ -131,7 +138,8 @@
                     <img src="{{ asset('images/HIW Img 02.png') }}" alt="" srcset=""
                         class="w-full rounded-sm">
                     <div class="text-center py-7">
-                        <p class="font-poppins font-medium text-base p-2 sm:text-lg text-blue">Your package is received &
+                        <p class="font-poppins font-medium text-base p-2 sm:text-lg text-blue">Your package is received
+                            &
                             <br>
                             shipped to Bahamas Postal Service Nassau
                         </p>
@@ -145,7 +153,8 @@
                     <img src="{{ asset('images/HIW Img 03.png') }}" alt="" srcset=""
                         class="w-full rounded-sm">
                     <div class="text-center py-7">
-                        <p class="font-poppins font-medium text-base p-2 sm:text-lg text-blue">Bahamas Postal Service then
+                        <p class="font-poppins font-medium text-base p-2 sm:text-lg text-blue">Bahamas Postal Service
+                            then
                             processes the <br>
                             item for Customs clearance</p>
                     </div>
@@ -158,7 +167,8 @@
                     <img src="{{ asset('images/HIW Img 04.png') }}" alt="" srcset=""
                         class="w-full rounded-sm">
                     <div class="text-center py-7">
-                        <p class="font-poppins font-medium text-base p-2 sm:text-lg text-blue">Packages are now available
+                        <p class="font-poppins font-medium text-base p-2 sm:text-lg text-blue">Packages are now
+                            available
                             for in store pickup or delivery services</p>
                     </div>
                 </div>
@@ -180,8 +190,9 @@
                 <p class="bg-blue inline-block p-1 rounded text-white mt-2 px-4">To get next day delivery</p>
             </div>
             <div class="">
-                <form action="" method="post" class="flex flex-col items-center py-10 justify-center">
-                    <input type="email" name="" id="" placeholder="Email Address"
+                <form action="{{ route('register') }}" method="get"
+                    class="flex flex-col items-center py-10 justify-center">
+                    <input type="email" name="email" id="email" placeholder="Email Address"
                         class="w-full rounded p-2 mb-4 focus:ring-0 border border-gray">
                     <button type="submit"
                         class="btn w-40 border border-blue rounded py-2 px-4 text-blue hover:text-white hover:bg-gradient-to-tr hover:from-mblue hover:to-dblue">Sign
